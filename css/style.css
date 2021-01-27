@@ -1,0 +1,151 @@
+/*==================================
+共通
+==================================*/
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.btn{
+  border-radius: 999px;
+  border: none;
+  padding: 0.8em 2em;
+}
+
+.btn-danger {
+  background: #A33750;
+}
+
+.btn-info {
+  background: #407391;
+  margin: 0 auto;
+  display: block;
+  width: 80%;
+}
+
+.maru {
+  border-radius: 6px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+} 
+
+h3 {
+  color: #A33750;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 20px;
+}
+.navbar {
+  flex-wrap: unset;
+}
+/*==================================
+top
+==================================*/
+.top {
+  background-image: url(../img/top.png);
+  background-size: cover;
+}
+
+/*==================================
+about
+==================================*/
+.about-name {
+  font-size: 25px;
+  color: #A33750;
+  font-weight: bold;
+}
+
+/*==================================
+work
+==================================*/
+footer {
+  background:  #407391;
+  color: #fff;
+}
+
+.visible, .invisible {
+  opacity: 0.0;
+  transition: opacity 3s ease;
+}
+.visible {
+  opacity: 1.0;
+}
+
+
+/*==================================
+hover
+==================================*/
+
+.avater-wrapper {
+	overflow:		hidden;
+	position:		relative;	/* 相対位置指定 */
+}
+.avater-wrapper .caption {
+	font-size:		16px;
+  text-align: 		center;
+	padding-top:		80px;
+	color:			#fff;
+}
+.avater-wrapper .mask {
+	width:			100%;
+	height:			100%;
+	position:		absolute;	/* 絶対位置指定 */
+	top:			0;
+	left:			0;
+	opacity:		0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,0,0.4);	/* マスクは半透明 */
+	-webkit-transition:	all 0.2s ease;
+	transition:		all 0.2s ease;
+}
+.avater-wrapper:hover .mask {
+	opacity:		1;	/* マスクを表示する */
+}
+/*==================================
+swiper
+==================================*/
+.swiper-container {
+  position: relative; /* ← swiper.cssに含まれています */
+}
+
+.swiper-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+/************************************
+** Twitterボックス
+************************************/
+.p-twitter-box{
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+  margin:2rem auto;
+  max-width:500px;
+  width:100%;
+}
+.p-twitter-box .p-twitter-title {
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-bottom: 0.5em;
+  font-size: 12px;
+  padding-left: 1em;
+}
+.p-twitter-box .twitter-tweet{
+  margin:0 !important;
+}
+.p-twitter-box p{
+  display:none;
+}
+/* 薄ピンク */
+.p-twitter-box .p-twitter-salmon-pink{
+  background: #cccccc;
+}
+iframe#twitter-widget-0 {
+  background:#cccccc;
+}
+.p-twitter-box {
+  padding: 1em;
+  background:#cccccc;
+  border-radius: 12px;
+}
